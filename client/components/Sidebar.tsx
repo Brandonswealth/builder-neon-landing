@@ -29,14 +29,11 @@ export function Sidebar() {
         {/* Logo */}
         <div className="flex items-center h-16 px-6 border-b border-sidebar-border">
           <div className="flex items-center space-x-3">
-            <div className="w-8 h-8 bg-accent rounded-lg flex items-center justify-center">
-              <span className="text-accent-foreground font-bold text-lg">
-                B
-              </span>
-            </div>
-            <span className="text-sidebar-foreground font-semibold text-xl">
-              BlueSQ
-            </span>
+            <img
+              src="https://cdn.builder.io/api/v1/image/assets%2F73cef5d45d4148daa57a98053c90e59f%2F575b9b39645a4ea4b28723c1f3513cd6?format=webp&width=800"
+              alt="BlueSQ Logo"
+              className="h-8 w-auto"
+            />
           </div>
         </div>
 
