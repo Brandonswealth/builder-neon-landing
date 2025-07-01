@@ -369,14 +369,19 @@ export default function AIEstimating() {
                         {estimate.status}
                       </Badge>
                     </div>
-                    <div className="flex items-center space-x-4 text-sm text-muted-foreground">
-                      <span>{estimate.blueprint}</span>
-                      <span>•</span>
-                      <span>{estimate.totalCost}</span>
-                      <span>•</span>
+                    <div className="grid grid-cols-2 gap-2 text-xs text-muted-foreground mb-2">
+                      <span>{estimate.type}</span>
+                      <span className="font-medium text-foreground">
+                        {estimate.totalCost}
+                      </span>
+                      <span>{estimate.sqft} sq ft</span>
                       <span>{estimate.accuracy} accuracy</span>
-                      <span>•</span>
-                      <span>{estimate.createdAt}</span>
+                    </div>
+                    <div className="text-xs text-muted-foreground">
+                      📁 {estimate.blueprint}
+                    </div>
+                    <div className="text-xs text-muted-foreground">
+                      Created: {estimate.createdAt}
                     </div>
                   </div>
                   <div className="flex items-center space-x-2">
