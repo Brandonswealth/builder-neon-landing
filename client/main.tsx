@@ -12,6 +12,9 @@ import Projects from "./pages/Projects";
 import Tasks from "./pages/Tasks";
 import Documents from "./pages/Documents";
 import CRM from "./pages/CRM";
+import Settings from "./pages/Settings";
+import Add from "./pages/Add";
+import Account from "./pages/Account";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -29,6 +32,9 @@ const App = () => (
           <Route path="/tasks" element={<Tasks />} />
           <Route path="/documents" element={<Documents />} />
           <Route path="/crm" element={<CRM />} />
+          <Route path="/settings" element={<Settings />} />
+          <Route path="/add" element={<Add />} />
+          <Route path="/account" element={<Account />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
