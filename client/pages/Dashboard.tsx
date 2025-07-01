@@ -224,15 +224,22 @@ export default function Dashboard() {
                           {project.status}
                         </Badge>
                       </div>
-                      <div className="flex items-center space-x-4 text-sm text-muted-foreground">
+                      <div className="grid grid-cols-2 gap-2 text-xs text-muted-foreground mb-2">
                         <span className="flex items-center">
-                          <Calendar className="mr-1 h-4 w-4" />
+                          <Calendar className="mr-1 h-3 w-3" />
                           {project.dueDate}
                         </span>
                         <span className="flex items-center">
-                          <Users className="mr-1 h-4 w-4" />
+                          <Users className="mr-1 h-3 w-3" />
                           {project.team} members
                         </span>
+                        <span className="font-medium text-foreground">
+                          {project.budget}
+                        </span>
+                        <span>{project.phase}</span>
+                      </div>
+                      <div className="text-xs text-muted-foreground">
+                        📍 {project.location}
                       </div>
                       <div className="mt-2">
                         <div className="flex items-center justify-between text-xs text-muted-foreground mb-1">
@@ -288,7 +295,15 @@ export default function Dashboard() {
                     <p className="text-xs text-muted-foreground mb-1">
                       {rec.project}
                     </p>
-                    <p className="text-xs text-accent">{rec.type}</p>
+                    <div className="flex items-center justify-between text-xs">
+                      <span className="text-accent">{rec.type}</span>
+                      <span className="text-muted-foreground">
+                        Due: {rec.dueDate}
+                      </span>
+                    </div>
+                    <p className="text-xs text-muted-foreground mt-1">
+                      Est: {rec.estimatedTime}
+                    </p>
                   </div>
                 ))}
               </div>
