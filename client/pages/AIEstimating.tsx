@@ -254,6 +254,16 @@ export default function AIEstimating() {
                       <p className="text-2xl font-bold text-foreground">
                         {selectedEstimate.totalCost}
                       </p>
+                      <p className="text-xs text-muted-foreground">
+                        $
+                        {(
+                          parseFloat(
+                            selectedEstimate.totalCost.replace(/[$,]/g, ""),
+                          ) /
+                          parseFloat(selectedEstimate.sqft.replace(/,/g, ""))
+                        ).toFixed(2)}
+                        /sq ft
+                      </p>
                     </div>
                     <div className="p-4 bg-muted/30 rounded-lg">
                       <p className="text-sm font-medium text-muted-foreground">
@@ -261,6 +271,9 @@ export default function AIEstimating() {
                       </p>
                       <p className="text-2xl font-bold text-accent">
                         {selectedEstimate.accuracy}
+                      </p>
+                      <p className="text-xs text-muted-foreground">
+                        {selectedEstimate.sqft} sq ft
                       </p>
                     </div>
                   </div>
@@ -281,6 +294,17 @@ export default function AIEstimating() {
                             </span>
                             <span className="text-sm font-medium text-foreground">
                               {category.cost}
+                            </span>
+                          </div>
+                          <p className="text-xs text-muted-foreground mb-1">
+                            {category.details}
+                          </p>
+                          <div className="flex items-center justify-between mb-2">
+                            <span className="text-xs text-muted-foreground">
+                              Qty: {category.quantity}
+                            </span>
+                            <span className="text-xs font-medium text-accent">
+                              {category.percentage}%
                             </span>
                           </div>
                           <div className="w-full bg-muted rounded-full h-2">
