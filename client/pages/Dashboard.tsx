@@ -11,6 +11,7 @@ import {
   AlertCircle,
   Plus,
   ChevronRight,
+  FolderOpen,
 } from "lucide-react";
 
 const stats = [
