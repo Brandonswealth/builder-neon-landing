@@ -322,6 +322,68 @@ export default function Dashboard() {
           ))}
         </div>
 
+        {/* Quick Actions */}
+        <Card className="bg-card border shadow-sm">
+          <CardHeader>
+            <CardTitle className="flex items-center text-foreground">
+              <Clock className="mr-2 h-5 w-5 text-primary" />
+              More 3-Click Actions
+            </CardTitle>
+          </CardHeader>
+          <CardContent>
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
+              <Button
+                variant="outline"
+                className="h-auto p-4 flex flex-col items-center space-y-2"
+              >
+                <Users className="h-6 w-6 text-green-600" />
+                <div className="text-center">
+                  <div className="text-xs font-medium">Add Team Member</div>
+                  <div className="text-xs text-muted-foreground">
+                    Invite • Set Role • Send
+                  </div>
+                </div>
+              </Button>
+              <Button
+                variant="outline"
+                className="h-auto p-4 flex flex-col items-center space-y-2"
+              >
+                <FolderOpen className="h-6 w-6 text-blue-600" />
+                <div className="text-center">
+                  <div className="text-xs font-medium">Upload Document</div>
+                  <div className="text-xs text-muted-foreground">
+                    Select • Tag • Share
+                  </div>
+                </div>
+              </Button>
+              <Button
+                variant="outline"
+                className="h-auto p-4 flex flex-col items-center space-y-2"
+              >
+                <Calendar className="h-6 w-6 text-purple-600" />
+                <div className="text-center">
+                  <div className="text-xs font-medium">Schedule Inspection</div>
+                  <div className="text-xs text-muted-foreground">
+                    Date • Inspector • Notify
+                  </div>
+                </div>
+              </Button>
+              <Button
+                variant="outline"
+                className="h-auto p-4 flex flex-col items-center space-y-2"
+              >
+                <AlertCircle className="h-6 w-6 text-orange-600" />
+                <div className="text-center">
+                  <div className="text-xs font-medium">Report Issue</div>
+                  <div className="text-xs text-muted-foreground">
+                    Photo • Description • Assign
+                  </div>
+                </div>
+              </Button>
+            </div>
+          </CardContent>
+        </Card>
+
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
           {/* Recent Projects */}
           <Card className="lg:col-span-2 bg-card border shadow-sm">
