@@ -162,6 +162,138 @@ export default function Dashboard() {
           </Button>
         </div>
 
+        {/* 3-Click Demo */}
+        <Card className="bg-gradient-to-r from-primary/5 to-accent/5 border-primary/20 shadow-lg">
+          <CardContent className="p-6">
+            <div className="text-center mb-6">
+              <h2 className="text-2xl font-bold text-foreground mb-2">
+                ⚡ What can you do in 3 clicks?
+              </h2>
+              <p className="text-muted-foreground">
+                Experience the power of BlueSQ's instant construction management
+              </p>
+            </div>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+              {/* Workflow 1: AI Estimating */}
+              <div
+                className="text-center group cursor-pointer"
+                onClick={() => (window.location.href = "/estimating")}
+              >
+                <div className="bg-accent/10 hover:bg-accent/20 rounded-xl p-6 transition-all group-hover:scale-105">
+                  <div className="text-accent text-4xl mb-4">🤖</div>
+                  <h3 className="font-semibold text-foreground mb-2">
+                    Get Instant Estimate
+                  </h3>
+                  <div className="space-y-2 text-sm text-muted-foreground">
+                    <div className="flex items-center justify-center space-x-2">
+                      <span className="bg-accent text-white rounded-full w-6 h-6 flex items-center justify-center text-xs font-bold">
+                        1
+                      </span>
+                      <span>Upload Blueprint</span>
+                    </div>
+                    <div className="flex items-center justify-center space-x-2">
+                      <span className="bg-accent text-white rounded-full w-6 h-6 flex items-center justify-center text-xs font-bold">
+                        2
+                      </span>
+                      <span>AI Analyzes Materials</span>
+                    </div>
+                    <div className="flex items-center justify-center space-x-2">
+                      <span className="bg-accent text-white rounded-full w-6 h-6 flex items-center justify-center text-xs font-bold">
+                        3
+                      </span>
+                      <span>Get Cost Breakdown</span>
+                    </div>
+                  </div>
+                  <Button
+                    className="mt-4 bg-accent hover:bg-accent/90"
+                    size="sm"
+                  >
+                    Try Now →
+                  </Button>
+                </div>
+              </div>
+
+              {/* Workflow 2: Task Management */}
+              <div
+                className="text-center group cursor-pointer"
+                onClick={() => (window.location.href = "/tasks")}
+              >
+                <div className="bg-green-500/10 hover:bg-green-500/20 rounded-xl p-6 transition-all group-hover:scale-105">
+                  <div className="text-green-600 text-4xl mb-4">✅</div>
+                  <h3 className="font-semibold text-foreground mb-2">
+                    Create & Assign Task
+                  </h3>
+                  <div className="space-y-2 text-sm text-muted-foreground">
+                    <div className="flex items-center justify-center space-x-2">
+                      <span className="bg-green-600 text-white rounded-full w-6 h-6 flex items-center justify-center text-xs font-bold">
+                        1
+                      </span>
+                      <span>Click "New Task"</span>
+                    </div>
+                    <div className="flex items-center justify-center space-x-2">
+                      <span className="bg-green-600 text-white rounded-full w-6 h-6 flex items-center justify-center text-xs font-bold">
+                        2
+                      </span>
+                      <span>Fill Task Details</span>
+                    </div>
+                    <div className="flex items-center justify-center space-x-2">
+                      <span className="bg-green-600 text-white rounded-full w-6 h-6 flex items-center justify-center text-xs font-bold">
+                        3
+                      </span>
+                      <span>Assign to Team</span>
+                    </div>
+                  </div>
+                  <Button
+                    className="mt-4 bg-green-600 hover:bg-green-700"
+                    size="sm"
+                  >
+                    Create Task →
+                  </Button>
+                </div>
+              </div>
+
+              {/* Workflow 3: Project Status */}
+              <div
+                className="text-center group cursor-pointer"
+                onClick={() => (window.location.href = "/projects")}
+              >
+                <div className="bg-blue-500/10 hover:bg-blue-500/20 rounded-xl p-6 transition-all group-hover:scale-105">
+                  <div className="text-blue-600 text-4xl mb-4">📊</div>
+                  <h3 className="font-semibold text-foreground mb-2">
+                    Check Project Status
+                  </h3>
+                  <div className="space-y-2 text-sm text-muted-foreground">
+                    <div className="flex items-center justify-center space-x-2">
+                      <span className="bg-blue-600 text-white rounded-full w-6 h-6 flex items-center justify-center text-xs font-bold">
+                        1
+                      </span>
+                      <span>Click "Projects"</span>
+                    </div>
+                    <div className="flex items-center justify-center space-x-2">
+                      <span className="bg-blue-600 text-white rounded-full w-6 h-6 flex items-center justify-center text-xs font-bold">
+                        2
+                      </span>
+                      <span>Select Project</span>
+                    </div>
+                    <div className="flex items-center justify-center space-x-2">
+                      <span className="bg-blue-600 text-white rounded-full w-6 h-6 flex items-center justify-center text-xs font-bold">
+                        3
+                      </span>
+                      <span>View Progress & Issues</span>
+                    </div>
+                  </div>
+                  <Button
+                    className="mt-4 bg-blue-600 hover:bg-blue-700"
+                    size="sm"
+                  >
+                    View Projects →
+                  </Button>
+                </div>
+              </div>
+            </div>
+          </CardContent>
+        </Card>
+
         {/* Stats Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
           {stats.map((stat) => (
