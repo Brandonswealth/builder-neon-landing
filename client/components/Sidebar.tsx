@@ -24,21 +24,21 @@ export function Sidebar() {
   const location = useLocation();
 
   return (
-    <div className="fixed inset-y-0 left-0 w-64 bg-sidebar border-r border-sidebar-border">
+    <div className="fixed inset-y-0 left-0 w-64 bg-sidebar shadow-lg">
       <div className="flex h-full flex-col">
         {/* Logo */}
-        <div className="flex items-center h-16 px-6 border-b border-sidebar-border">
+        <div className="flex items-center h-18 px-6 py-4">
           <div className="flex items-center space-x-3">
             <img
               src="https://cdn.builder.io/api/v1/image/assets%2F73cef5d45d4148daa57a98053c90e59f%2F575b9b39645a4ea4b28723c1f3513cd6?format=webp&width=800"
               alt="BlueSQ Logo"
-              className="h-8 w-auto"
+              className="h-10 w-auto"
             />
           </div>
         </div>
 
         {/* Navigation */}
-        <nav className="flex-1 px-4 py-6 space-y-2">
+        <nav className="flex-1 px-3 py-4 space-y-1">
           {navigation.map((item) => {
             const isActive = location.pathname === item.href;
             return (
@@ -46,10 +46,10 @@ export function Sidebar() {
                 key={item.name}
                 to={item.href}
                 className={cn(
-                  "flex items-center px-3 py-2.5 text-sm font-medium rounded-lg transition-colors",
+                  "flex items-center px-4 py-3 text-sm font-medium rounded-md transition-all duration-200",
                   isActive
-                    ? "bg-sidebar-accent text-sidebar-accent-foreground"
-                    : "text-sidebar-foreground hover:bg-sidebar-accent/50 hover:text-sidebar-accent-foreground",
+                    ? "bg-sidebar-primary text-sidebar-primary-foreground shadow-sm"
+                    : "text-sidebar-foreground/80 hover:bg-sidebar-accent hover:text-sidebar-accent-foreground hover:shadow-sm",
                 )}
               >
                 <item.icon className="mr-3 h-5 w-5" />
