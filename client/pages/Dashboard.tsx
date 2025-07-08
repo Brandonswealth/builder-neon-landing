@@ -12,6 +12,7 @@ import {
   Plus,
   ChevronRight,
   FolderOpen,
+  CheckCircle,
 } from "lucide-react";
 
 const stats = [
@@ -173,16 +174,30 @@ export default function Dashboard() {
           </div>
         </div>
 
-        {/* 3-Click Demo */}
-        <Card className="bg-gradient-to-r from-primary/5 to-accent/5 border-primary/20 shadow-lg">
-          <CardContent className="p-6">
-            <div className="text-center mb-6">
-              <h2 className="text-2xl font-bold text-foreground mb-2">
-                ⚡ What can you do in 3 clicks?
+        {/* 3-Click Demo - Buildertrend Style */}
+        <Card className="bg-gradient-to-br from-slate-50 to-white border shadow-xl">
+          <CardContent className="p-8">
+            <div className="text-center mb-8">
+              <div className="inline-block bg-accent text-accent-foreground px-4 py-2 rounded-full text-sm font-medium mb-4">
+                CONSTRUCTION MANAGEMENT SOFTWARE
+              </div>
+              <h2 className="text-3xl font-bold text-foreground mb-4">
+                Infinite potential. Total control.
               </h2>
-              <p className="text-muted-foreground">
-                Experience the power of BlueSQ's instant construction management
-              </p>
+              <div className="flex items-center justify-center space-x-8 mb-6">
+                <div className="flex items-center space-x-2 text-accent font-medium">
+                  <CheckCircle className="h-5 w-5" />
+                  <span>Unlimited users</span>
+                </div>
+                <div className="flex items-center space-x-2 text-accent font-medium">
+                  <CheckCircle className="h-5 w-5" />
+                  <span>Unlimited projects</span>
+                </div>
+                <div className="flex items-center space-x-2 text-accent font-medium">
+                  <CheckCircle className="h-5 w-5" />
+                  <span>Unlimited potential</span>
+                </div>
+              </div>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
               {/* Workflow 1: AI Estimating */}
