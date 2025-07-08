@@ -150,17 +150,27 @@ export default function Dashboard() {
     <Layout>
       <div className="space-y-6">
         {/* Header */}
-        <div className="flex items-center justify-between">
+        <div className="flex items-center justify-between mb-8">
           <div>
-            <h1 className="text-3xl font-bold text-foreground">Dashboard</h1>
-            <p className="text-muted-foreground">
-              Welcome back! Here's what's happening with your projects.
+            <h1 className="text-4xl font-bold text-foreground mb-2">
+              Construction Command Center
+            </h1>
+            <p className="text-lg text-muted-foreground">
+              Real contractors. Real results. Real control over your business.
             </p>
           </div>
-          <Button className="bg-primary hover:bg-primary/90">
-            <Plus className="mr-2 h-4 w-4" />
-            New Project
-          </Button>
+          <div className="flex space-x-3">
+            <Button
+              variant="outline"
+              className="border-accent text-accent hover:bg-accent hover:text-accent-foreground"
+            >
+              Watch Demo
+            </Button>
+            <Button className="bg-primary hover:bg-primary/90 shadow-lg">
+              <Plus className="mr-2 h-4 w-4" />
+              New Project
+            </Button>
+          </div>
         </div>
 
         {/* 3-Click Demo */}
@@ -295,28 +305,29 @@ export default function Dashboard() {
           </CardContent>
         </Card>
 
-        {/* Stats Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        {/* Results Grid - Buildertrend Style */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-8">
           {stats.map((stat) => (
-            <Card key={stat.title} className="bg-card border shadow-sm">
+            <Card
+              key={stat.title}
+              className="bg-card border shadow-md hover:shadow-lg transition-all duration-200"
+            >
               <CardContent className="p-6">
-                <div className="flex items-center justify-between">
-                  <div>
-                    <p className="text-sm font-medium text-muted-foreground">
-                      {stat.title}
-                    </p>
-                    <p className="text-2xl font-bold text-foreground">
-                      {stat.value}
-                    </p>
-                    <p className="text-xs text-muted-foreground mt-1">
-                      {stat.change}
-                    </p>
-                  </div>
+                <div className="text-center">
                   <div
-                    className={`p-3 rounded-full bg-accent/10 ${stat.color}`}
+                    className={`inline-flex p-4 rounded-full bg-gradient-to-br from-accent/20 to-accent/10 mb-4`}
                   >
-                    <stat.icon className="h-6 w-6" />
+                    <stat.icon className={`h-8 w-8 ${stat.color}`} />
                   </div>
+                  <div className="text-3xl font-bold text-foreground mb-2">
+                    {stat.value}
+                  </div>
+                  <p className="text-sm font-medium text-muted-foreground mb-1">
+                    {stat.title}
+                  </p>
+                  <p className="text-xs text-accent font-medium">
+                    {stat.change}
+                  </p>
                 </div>
               </CardContent>
             </Card>
