@@ -9,11 +9,13 @@ import {
   Bot,
   Settings,
   LogOut,
+  Calculator,
 } from "lucide-react";
 
 const navigation = [
   { name: "Dashboard", href: "/", icon: LayoutDashboard },
   { name: "AI Estimating", href: "/estimating", icon: Bot },
+  { name: "Bidding", href: "/bidding", icon: Calculator },
   { name: "Projects", href: "/projects", icon: FileText },
   { name: "Tasks", href: "/tasks", icon: CheckSquare },
   { name: "Documents", href: "/documents", icon: FolderOpen },
