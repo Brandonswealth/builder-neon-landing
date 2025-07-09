@@ -1,4 +1,5 @@
 import { Layout } from "@/components/Layout";
+import { MobileDashboard } from "@/components/MobileDashboard";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
@@ -149,7 +150,13 @@ const aiRecommendations = [
 export default function Dashboard() {
   return (
     <Layout>
-      <div className="space-y-6">
+      {/* Mobile iOS Dashboard */}
+      <div className="md:hidden">
+        <MobileDashboard />
+      </div>
+
+      {/* Desktop Dashboard */}
+      <div className="hidden md:block space-y-6">
         {/* Header */}
         <div className="flex items-center justify-between mb-8">
           <div>
