@@ -194,26 +194,37 @@ export default function AIEstimating() {
 
               <div className="mt-6 space-y-3">
                 <h4 className="text-sm font-medium text-foreground">
-                  Processing Steps:
+                  AI + BIM Processing:
                 </h4>
                 <div className="space-y-2 text-xs">
                   <div className="flex items-center text-muted-foreground">
                     <CheckCircle className="mr-2 h-4 w-4 text-green-600" />
-                    Document analysis
+                    BIM model extraction
                   </div>
                   <div className="flex items-center text-muted-foreground">
                     <CheckCircle className="mr-2 h-4 w-4 text-green-600" />
-                    Material identification
+                    Autodesk integration
                   </div>
                   <div className="flex items-center text-muted-foreground">
                     <Clock className="mr-2 h-4 w-4 text-orange-500" />
-                    Cost calculation
+                    Quantity takeoffs
                   </div>
                   <div className="flex items-center text-muted-foreground">
                     <Clock className="mr-2 h-4 w-4 text-muted-foreground" />
-                    Report generation
+                    Real-time pricing
                   </div>
                 </div>
+              </div>
+
+              <div className="mt-4 p-3 bg-accent/10 rounded-lg">
+                <div className="flex items-center text-xs text-accent">
+                  <Bot className="mr-2 h-4 w-4" />
+                  <span className="font-medium">Enterprise Integration</span>
+                </div>
+                <p className="text-xs text-muted-foreground mt-1">
+                  Direct BIM model import from Autodesk Construction Cloud,
+                  Procore, and Bentley platforms
+                </p>
               </div>
             </CardContent>
           </Card>
