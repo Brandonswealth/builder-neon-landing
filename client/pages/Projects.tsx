@@ -136,6 +136,56 @@ export default function Projects() {
           </Button>
         </div>
 
+        {/* Enterprise Project Controls */}
+        <Card className="bg-gradient-to-br from-primary/5 to-accent/5 border shadow-lg mb-6">
+          <CardContent className="p-6">
+            <div className="flex items-center justify-between mb-4">
+              <h2 className="text-xl font-bold text-foreground">
+                Enterprise Project Controls
+              </h2>
+              <Badge className="bg-accent text-accent-foreground">
+                PROCORE-LEVEL
+              </Badge>
+            </div>
+            <div className="grid grid-cols-1 md:grid-cols-6 gap-4">
+              <div className="text-center p-3 bg-white/60 rounded-lg">
+                <p className="text-sm text-muted-foreground">Portfolio Value</p>
+                <p className="text-2xl font-bold text-foreground">$38.4M</p>
+                <p className="text-xs text-green-600">+12% YoY</p>
+              </div>
+              <div className="text-center p-3 bg-white/60 rounded-lg">
+                <p className="text-sm text-muted-foreground">
+                  Schedule Performance
+                </p>
+                <p className="text-2xl font-bold text-accent">94%</p>
+                <p className="text-xs text-green-600">On-time delivery</p>
+              </div>
+              <div className="text-center p-3 bg-white/60 rounded-lg">
+                <p className="text-sm text-muted-foreground">
+                  Cost Performance
+                </p>
+                <p className="text-2xl font-bold text-green-600">96%</p>
+                <p className="text-xs text-green-600">Under budget</p>
+              </div>
+              <div className="text-center p-3 bg-white/60 rounded-lg">
+                <p className="text-sm text-muted-foreground">Quality Score</p>
+                <p className="text-2xl font-bold text-primary">9.2/10</p>
+                <p className="text-xs text-green-600">Client satisfaction</p>
+              </div>
+              <div className="text-center p-3 bg-white/60 rounded-lg">
+                <p className="text-sm text-muted-foreground">Safety Record</p>
+                <p className="text-2xl font-bold text-green-600">0</p>
+                <p className="text-xs text-green-600">Incidents</p>
+              </div>
+              <div className="text-center p-3 bg-white/60 rounded-lg">
+                <p className="text-sm text-muted-foreground">Change Orders</p>
+                <p className="text-2xl font-bold text-orange-600">2.1%</p>
+                <p className="text-xs text-orange-600">Avg. impact</p>
+              </div>
+            </div>
+          </CardContent>
+        </Card>
+
         {/* Project Stats */}
         <div className="grid grid-cols-1 md:grid-cols-4 gap-4">
           <Card className="bg-card border shadow-sm">
