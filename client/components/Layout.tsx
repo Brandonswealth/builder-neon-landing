@@ -19,10 +19,13 @@ export function Layout({ children, className }: LayoutProps) {
         </main>
       </div>
 
-      {/* Mobile Layout */}
+      {/* iOS Mobile Layout */}
       <div className="md:hidden">
-        <main className={cn("pb-16", className)}>
-          <div className="p-4">{children}</div>
+        {/* iOS Status Bar Space */}
+        <div className="h-safe-top bg-background"></div>
+
+        <main className={cn("pb-28 min-h-screen bg-gray-50", className)}>
+          <div className="p-4 space-y-4">{children}</div>
         </main>
         <BottomNav />
       </div>
