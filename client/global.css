@@ -98,3 +98,42 @@
     @apply bg-background text-foreground;
   }
 }
+
+@layer utilities {
+  /* iOS Safe Area Support */
+  .safe-area-pb {
+    padding-bottom: env(safe-area-inset-bottom);
+  }
+
+  .pb-safe {
+    padding-bottom: max(0.5rem, env(safe-area-inset-bottom));
+  }
+
+  .h-safe-top {
+    height: env(safe-area-inset-top);
+  }
+
+  /* iOS-style backdrop blur */
+  .backdrop-blur-xl {
+    backdrop-filter: blur(24px);
+    -webkit-backdrop-filter: blur(24px);
+  }
+
+  /* iOS-style active states */
+  .active\:scale-95:active {
+    transform: scale(0.95);
+  }
+
+  /* iOS-style shadows */
+  .ios-shadow {
+    box-shadow:
+      0 1px 3px rgba(0, 0, 0, 0.1),
+      0 1px 2px rgba(0, 0, 0, 0.06);
+  }
+
+  .ios-shadow-lg {
+    box-shadow:
+      0 10px 15px -3px rgba(0, 0, 0, 0.1),
+      0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  }
+}
