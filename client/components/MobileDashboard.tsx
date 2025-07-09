@@ -31,32 +31,32 @@ const quickStats = [
 
 const quickActions = [
   {
-    title: "AI Estimate",
-    subtitle: "Upload blueprint",
+    title: "Estimating",
+    subtitle: "AI takeoffs",
     icon: Bot,
     color: "bg-gradient-to-br from-blue-500 to-blue-600",
     href: "/estimating",
   },
   {
-    title: "Create Bid",
-    subtitle: "New proposal",
+    title: "Bid Mgmt",
+    subtitle: "Proposals",
     icon: Calculator,
     color: "bg-gradient-to-br from-green-500 to-green-600",
     href: "/bidding",
   },
   {
-    title: "Add Task",
-    subtitle: "Assign work",
-    icon: Plus,
+    title: "Projects",
+    subtitle: "Management",
+    icon: FileText,
     color: "bg-gradient-to-br from-purple-500 to-purple-600",
-    href: "/tasks",
+    href: "/projects",
   },
   {
-    title: "Projects",
-    subtitle: "View progress",
-    icon: FileText,
+    title: "Field Tools",
+    subtitle: "Productivity",
+    icon: Plus,
     color: "bg-gradient-to-br from-orange-500 to-orange-600",
-    href: "/projects",
+    href: "/field",
   },
 ];
 
@@ -85,7 +85,7 @@ export function MobileDashboard() {
   return (
     <div className="space-y-6">
       {/* iOS Header */}
-      <div className="flex items-center justify-between px-1">
+      <div className="flex items-center justify-between px-1 mb-2">
         <div>
           <h1 className="text-2xl font-bold text-foreground">Good Morning</h1>
           <p className="text-muted-foreground">John Constructor</p>
@@ -108,6 +108,58 @@ export function MobileDashboard() {
           </Button>
         </div>
       </div>
+
+      {/* Comprehensive Features Badge */}
+      <Card className="border-0 shadow-sm bg-gradient-to-r from-primary/10 to-accent/10 rounded-2xl mb-4">
+        <CardContent className="p-3">
+          <div className="text-center">
+            <p className="text-xs font-semibold text-primary mb-2">
+              COMPLETE CONSTRUCTION PLATFORM
+            </p>
+            <div className="flex flex-wrap gap-1 justify-center">
+              <span className="text-xs bg-white/70 text-primary px-2 py-1 rounded">
+                Design
+              </span>
+              <span className="text-xs bg-white/70 text-primary px-2 py-1 rounded">
+                Estimating
+              </span>
+              <span className="text-xs bg-white/70 text-primary px-2 py-1 rounded">
+                Documents
+              </span>
+              <span className="text-xs bg-white/70 text-primary px-2 py-1 rounded">
+                Projects
+              </span>
+              <span className="text-xs bg-white/70 text-primary px-2 py-1 rounded">
+                Bids
+              </span>
+              <span className="text-xs bg-white/70 text-primary px-2 py-1 rounded">
+                BIM
+              </span>
+              <span className="text-xs bg-white/70 text-primary px-2 py-1 rounded">
+                Financial
+              </span>
+              <span className="text-xs bg-white/70 text-primary px-2 py-1 rounded">
+                CRM
+              </span>
+              <span className="text-xs bg-white/70 text-primary px-2 py-1 rounded">
+                Scheduling
+              </span>
+              <span className="text-xs bg-white/70 text-primary px-2 py-1 rounded">
+                Field
+              </span>
+              <span className="text-xs bg-white/70 text-primary px-2 py-1 rounded">
+                AI
+              </span>
+              <span className="text-xs bg-white/70 text-primary px-2 py-1 rounded">
+                Integrations
+              </span>
+              <span className="text-xs bg-white/70 text-primary px-2 py-1 rounded">
+                Marketplace
+              </span>
+            </div>
+          </div>
+        </CardContent>
+      </Card>
 
       {/* Quick Stats */}
       <div className="grid grid-cols-2 gap-3">
