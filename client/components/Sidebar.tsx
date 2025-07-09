@@ -14,12 +14,19 @@ import {
 
 const navigation = [
   { name: "Dashboard", href: "/", icon: LayoutDashboard },
-  { name: "AI Estimating", href: "/estimating", icon: Bot },
-  { name: "Bidding", href: "/bidding", icon: Calculator },
-  { name: "Projects", href: "/projects", icon: FileText },
-  { name: "Tasks", href: "/tasks", icon: CheckSquare },
-  { name: "Documents", href: "/documents", icon: FolderOpen },
+  { name: "Design Coordinator", href: "/design", icon: FileText },
+  { name: "Estimating & Takeoff", href: "/estimating", icon: Bot },
+  { name: "Document Management", href: "/documents", icon: FolderOpen },
+  { name: "Project Management", href: "/projects", icon: FileText },
+  { name: "Bid Management", href: "/bidding", icon: Calculator },
+  { name: "BIM", href: "/bim", icon: FileText },
+  { name: "Financial Management", href: "/financial", icon: FileText },
   { name: "CRM", href: "/crm", icon: Users },
+  { name: "Scheduling & Monitoring", href: "/scheduling", icon: CheckSquare },
+  { name: "Field Productivity", href: "/field", icon: FileText },
+  { name: "AI Assistance", href: "/ai", icon: Bot },
+  { name: "Integrations", href: "/integrations", icon: FileText },
+  { name: "Marketplace", href: "/marketplace", icon: FileText },
 ];
 
 export function Sidebar() {

@@ -163,9 +163,50 @@ export default function Dashboard() {
             <h1 className="text-4xl font-bold text-foreground mb-2">
               Construction Command Center
             </h1>
-            <p className="text-lg text-muted-foreground">
+            <p className="text-lg text-muted-foreground mb-3">
               Real contractors. Real results. Real control over your business.
             </p>
+            <div className="flex flex-wrap gap-2 text-xs text-muted-foreground">
+              <span className="bg-primary/10 text-primary px-2 py-1 rounded">
+                Design Coordinator
+              </span>
+              <span className="bg-primary/10 text-primary px-2 py-1 rounded">
+                Estimating & Takeoff
+              </span>
+              <span className="bg-primary/10 text-primary px-2 py-1 rounded">
+                Document Management
+              </span>
+              <span className="bg-primary/10 text-primary px-2 py-1 rounded">
+                Project Management
+              </span>
+              <span className="bg-primary/10 text-primary px-2 py-1 rounded">
+                Bid Management
+              </span>
+              <span className="bg-primary/10 text-primary px-2 py-1 rounded">
+                BIM
+              </span>
+              <span className="bg-primary/10 text-primary px-2 py-1 rounded">
+                Financial Management
+              </span>
+              <span className="bg-primary/10 text-primary px-2 py-1 rounded">
+                CRM
+              </span>
+              <span className="bg-primary/10 text-primary px-2 py-1 rounded">
+                Scheduling & Monitoring
+              </span>
+              <span className="bg-primary/10 text-primary px-2 py-1 rounded">
+                Field Productivity
+              </span>
+              <span className="bg-primary/10 text-primary px-2 py-1 rounded">
+                AI Assistance
+              </span>
+              <span className="bg-primary/10 text-primary px-2 py-1 rounded">
+                Integrations
+              </span>
+              <span className="bg-primary/10 text-primary px-2 py-1 rounded">
+                Marketplace
+              </span>
+            </div>
           </div>
           <div className="flex space-x-3">
             <Button
