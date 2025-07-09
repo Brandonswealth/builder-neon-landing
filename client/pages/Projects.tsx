@@ -1,4 +1,5 @@
 import { Layout } from "@/components/Layout";
+import { MobileProjects } from "@/components/MobileProjects";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
@@ -122,7 +123,13 @@ const upcomingMilestones = [
 export default function Projects() {
   return (
     <Layout>
-      <div className="space-y-6">
+      {/* Mobile iOS Projects */}
+      <div className="md:hidden">
+        <MobileProjects />
+      </div>
+
+      {/* Desktop Projects */}
+      <div className="hidden md:block space-y-6">
         <div className="flex items-center justify-between">
           <div>
             <h1 className="text-3xl font-bold text-foreground">Projects</h1>
