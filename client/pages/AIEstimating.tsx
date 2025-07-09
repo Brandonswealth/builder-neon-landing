@@ -147,11 +147,37 @@ export default function AIEstimating() {
         <div className="flex items-center justify-between">
           <div>
             <h1 className="text-3xl font-bold text-foreground">
-              AI Estimating
+              Estimating & Takeoff
             </h1>
-            <p className="text-muted-foreground">
-              Upload blueprints and get instant AI-powered cost estimates
+            <p className="text-muted-foreground mb-2">
+              AI-powered estimating with comprehensive construction management
             </p>
+            <div className="flex flex-wrap gap-1 text-xs">
+              <span className="bg-primary/10 text-primary px-2 py-1 rounded">
+                Design Coordinator
+              </span>
+              <span className="bg-accent/10 text-accent px-2 py-1 rounded">
+                Estimating & Takeoff
+              </span>
+              <span className="bg-primary/10 text-primary px-2 py-1 rounded">
+                Document Management
+              </span>
+              <span className="bg-primary/10 text-primary px-2 py-1 rounded">
+                Project Management
+              </span>
+              <span className="bg-primary/10 text-primary px-2 py-1 rounded">
+                Bid Management
+              </span>
+              <span className="bg-primary/10 text-primary px-2 py-1 rounded">
+                BIM
+              </span>
+              <span className="bg-primary/10 text-primary px-2 py-1 rounded">
+                Financial Management
+              </span>
+              <span className="bg-primary/10 text-primary px-2 py-1 rounded">
+                AI Assistance
+              </span>
+            </div>
           </div>
           <Button className="bg-accent hover:bg-accent/90">
             <Bot className="mr-2 h-4 w-4" />
