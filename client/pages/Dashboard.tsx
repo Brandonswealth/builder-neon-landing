@@ -459,59 +459,104 @@ export default function Dashboard() {
           </CardContent>
         </Card>
 
-        {/* Enterprise Construction Management */}
+        {/* Complete Construction Management Platform */}
         <Card className="bg-gradient-to-br from-primary/5 to-accent/5 border shadow-xl">
           <CardContent className="p-8">
             <div className="flex items-start justify-between mb-6">
               <div>
                 <h2 className="text-2xl font-bold text-foreground mb-2">
-                  🏗️ Enterprise Construction Platform
+                  🏗️ Complete Construction Management Platform
                 </h2>
-                <p className="text-muted-foreground">
-                  Procore-level project controls with Autodesk BIM integration
+                <p className="text-muted-foreground mb-4">
+                  All-in-one solution covering every aspect of construction
+                  management
                 </p>
+                <div className="text-sm text-accent font-medium">
+                  Design Coordinator • Estimating & Takeoff • Document
+                  Management • Project Management • Bid Management • BIM •
+                  Financial Management • CRM • Scheduling & Monitoring • Field
+                  Productivity • AI Assistance • Integrations • Marketplace
+                </div>
               </div>
               <Badge className="bg-accent text-accent-foreground">
-                ENTERPRISE
+                ALL-IN-ONE
               </Badge>
             </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-4 gap-4 mb-6">
-              <div className="text-center p-4 bg-white/50 rounded-lg border border-white/20">
-                <div className="text-primary text-2xl mb-2">📊</div>
-                <h3 className="font-semibold text-foreground text-sm">
-                  Project Controls
+            <div className="grid grid-cols-2 md:grid-cols-7 gap-3 mb-6">
+              <div className="text-center p-3 bg-white/50 rounded-lg border border-white/20">
+                <div className="text-primary text-xl mb-1">🎨</div>
+                <h3 className="font-semibold text-foreground text-xs">
+                  Design Coordinator
                 </h3>
-                <p className="text-xs text-muted-foreground">
-                  Real-time cost tracking
-                </p>
               </div>
-              <div className="text-center p-4 bg-white/50 rounded-lg border border-white/20">
-                <div className="text-primary text-2xl mb-2">🏗️</div>
-                <h3 className="font-semibold text-foreground text-sm">
-                  BIM Integration
+              <div className="text-center p-3 bg-white/50 rounded-lg border border-white/20">
+                <div className="text-primary text-xl mb-1">📐</div>
+                <h3 className="font-semibold text-foreground text-xs">
+                  Estimating & Takeoff
                 </h3>
-                <p className="text-xs text-muted-foreground">
-                  3D model coordination
-                </p>
               </div>
-              <div className="text-center p-4 bg-white/50 rounded-lg border border-white/20">
-                <div className="text-primary text-2xl mb-2">🤝</div>
-                <h3 className="font-semibold text-foreground text-sm">
-                  Collaboration
+              <div className="text-center p-3 bg-white/50 rounded-lg border border-white/20">
+                <div className="text-primary text-xl mb-1">📄</div>
+                <h3 className="font-semibold text-foreground text-xs">
+                  Document Management
                 </h3>
-                <p className="text-xs text-muted-foreground">
-                  Team coordination
-                </p>
               </div>
-              <div className="text-center p-4 bg-white/50 rounded-lg border border-white/20">
-                <div className="text-primary text-2xl mb-2">📱</div>
-                <h3 className="font-semibold text-foreground text-sm">
-                  Mobile First
+              <div className="text-center p-3 bg-white/50 rounded-lg border border-white/20">
+                <div className="text-primary text-xl mb-1">📊</div>
+                <h3 className="font-semibold text-foreground text-xs">
+                  Project Management
                 </h3>
-                <p className="text-xs text-muted-foreground">
-                  Field-ready tools
-                </p>
+              </div>
+              <div className="text-center p-3 bg-white/50 rounded-lg border border-white/20">
+                <div className="text-primary text-xl mb-1">💰</div>
+                <h3 className="font-semibold text-foreground text-xs">
+                  Bid Management
+                </h3>
+              </div>
+              <div className="text-center p-3 bg-white/50 rounded-lg border border-white/20">
+                <div className="text-primary text-xl mb-1">🏗️</div>
+                <h3 className="font-semibold text-foreground text-xs">BIM</h3>
+              </div>
+              <div className="text-center p-3 bg-white/50 rounded-lg border border-white/20">
+                <div className="text-primary text-xl mb-1">💼</div>
+                <h3 className="font-semibold text-foreground text-xs">
+                  Financial
+                </h3>
+              </div>
+              <div className="text-center p-3 bg-white/50 rounded-lg border border-white/20">
+                <div className="text-primary text-xl mb-1">🤝</div>
+                <h3 className="font-semibold text-foreground text-xs">CRM</h3>
+              </div>
+              <div className="text-center p-3 bg-white/50 rounded-lg border border-white/20">
+                <div className="text-primary text-xl mb-1">📅</div>
+                <h3 className="font-semibold text-foreground text-xs">
+                  Scheduling
+                </h3>
+              </div>
+              <div className="text-center p-3 bg-white/50 rounded-lg border border-white/20">
+                <div className="text-primary text-xl mb-1">⚡</div>
+                <h3 className="font-semibold text-foreground text-xs">
+                  Field Productivity
+                </h3>
+              </div>
+              <div className="text-center p-3 bg-white/50 rounded-lg border border-white/20">
+                <div className="text-primary text-xl mb-1">🤖</div>
+                <h3 className="font-semibold text-foreground text-xs">
+                  AI Assistance
+                </h3>
+              </div>
+              <div className="text-center p-3 bg-white/50 rounded-lg border border-white/20">
+                <div className="text-primary text-xl mb-1">🔗</div>
+                <h3 className="font-semibold text-foreground text-xs">
+                  Integrations
+                </h3>
+              </div>
+              <div className="text-center p-3 bg-white/50 rounded-lg border border-white/20">
+                <div className="text-primary text-xl mb-1">🏪</div>
+                <h3 className="font-semibold text-foreground text-xs">
+                  Marketplace
+                </h3>
               </div>
             </div>
 
@@ -527,7 +572,14 @@ export default function Dashboard() {
                 className="border-accent text-accent hover:bg-accent hover:text-accent-foreground"
                 onClick={() => (window.location.href = "/projects")}
               >
-                Project Controls →
+                Project Management →
+              </Button>
+              <Button
+                variant="outline"
+                className="border-accent text-accent hover:bg-accent hover:text-accent-foreground"
+                onClick={() => (window.location.href = "/estimating")}
+              >
+                Estimating & Takeoff →
               </Button>
               <Button
                 variant="outline"
