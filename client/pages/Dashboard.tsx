@@ -411,6 +411,87 @@ export default function Dashboard() {
           </CardContent>
         </Card>
 
+        {/* Enterprise Construction Management */}
+        <Card className="bg-gradient-to-br from-primary/5 to-accent/5 border shadow-xl">
+          <CardContent className="p-8">
+            <div className="flex items-start justify-between mb-6">
+              <div>
+                <h2 className="text-2xl font-bold text-foreground mb-2">
+                  🏗️ Enterprise Construction Platform
+                </h2>
+                <p className="text-muted-foreground">
+                  Procore-level project controls with Autodesk BIM integration
+                </p>
+              </div>
+              <Badge className="bg-accent text-accent-foreground">
+                ENTERPRISE
+              </Badge>
+            </div>
+
+            <div className="grid grid-cols-1 md:grid-cols-4 gap-4 mb-6">
+              <div className="text-center p-4 bg-white/50 rounded-lg border border-white/20">
+                <div className="text-primary text-2xl mb-2">📊</div>
+                <h3 className="font-semibold text-foreground text-sm">
+                  Project Controls
+                </h3>
+                <p className="text-xs text-muted-foreground">
+                  Real-time cost tracking
+                </p>
+              </div>
+              <div className="text-center p-4 bg-white/50 rounded-lg border border-white/20">
+                <div className="text-primary text-2xl mb-2">🏗️</div>
+                <h3 className="font-semibold text-foreground text-sm">
+                  BIM Integration
+                </h3>
+                <p className="text-xs text-muted-foreground">
+                  3D model coordination
+                </p>
+              </div>
+              <div className="text-center p-4 bg-white/50 rounded-lg border border-white/20">
+                <div className="text-primary text-2xl mb-2">🤝</div>
+                <h3 className="font-semibold text-foreground text-sm">
+                  Collaboration
+                </h3>
+                <p className="text-xs text-muted-foreground">
+                  Team coordination
+                </p>
+              </div>
+              <div className="text-center p-4 bg-white/50 rounded-lg border border-white/20">
+                <div className="text-primary text-2xl mb-2">📱</div>
+                <h3 className="font-semibold text-foreground text-sm">
+                  Mobile First
+                </h3>
+                <p className="text-xs text-muted-foreground">
+                  Field-ready tools
+                </p>
+              </div>
+            </div>
+
+            <div className="flex flex-wrap gap-3">
+              <Button
+                className="bg-primary hover:bg-primary/90"
+                onClick={() => (window.location.href = "/bidding")}
+              >
+                Bid Management →
+              </Button>
+              <Button
+                variant="outline"
+                className="border-accent text-accent hover:bg-accent hover:text-accent-foreground"
+                onClick={() => (window.location.href = "/projects")}
+              >
+                Project Controls →
+              </Button>
+              <Button
+                variant="outline"
+                className="border-accent text-accent hover:bg-accent hover:text-accent-foreground"
+                onClick={() => (window.location.href = "/documents")}
+              >
+                Document Management →
+              </Button>
+            </div>
+          </CardContent>
+        </Card>
+
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
           {/* Recent Projects */}
           <Card className="lg:col-span-2 bg-card border shadow-sm">
