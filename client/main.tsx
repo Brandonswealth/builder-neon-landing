@@ -16,6 +16,9 @@ import Documents from "./pages/Documents";
 import BIM from "./pages/BIM";
 import Financial from "./pages/Financial";
 import CRM from "./pages/CRM";
+import Leads from "./pages/Leads";
+import Workflow from "./pages/Workflow";
+import HR from "./pages/HR";
 import Scheduling from "./pages/Scheduling";
 import Field from "./pages/Field";
 import AI from "./pages/AI";
@@ -45,6 +48,9 @@ const App = () => (
           <Route path="/bim" element={<BIM />} />
           <Route path="/financial" element={<Financial />} />
           <Route path="/crm" element={<CRM />} />
+          <Route path="/leads" element={<Leads />} />
+          <Route path="/workflow" element={<Workflow />} />
+          <Route path="/hr" element={<HR />} />
           <Route path="/scheduling" element={<Scheduling />} />
           <Route path="/field" element={<Field />} />
           <Route path="/ai" element={<AI />} />
