@@ -10,6 +10,9 @@ import {
   Settings,
   LogOut,
   Calculator,
+  Target,
+  Workflow,
+  UserCheck,
 } from "lucide-react";
 
 const navigation = [
@@ -22,6 +25,9 @@ const navigation = [
   { name: "BIM", href: "/bim", icon: FileText },
   { name: "Financial Management", href: "/financial", icon: FileText },
   { name: "CRM", href: "/crm", icon: Users },
+  { name: "Leads Marketplace", href: "/leads", icon: Target },
+  { name: "Workflow Management", href: "/workflow", icon: Workflow },
+  { name: "HR Service", href: "/hr", icon: UserCheck },
   { name: "Scheduling & Monitoring", href: "/scheduling", icon: CheckSquare },
   { name: "Field Productivity", href: "/field", icon: FileText },
   { name: "AI Assistance", href: "/ai", icon: Bot },
