@@ -20,6 +20,9 @@ import {
   Play,
   Pause,
   Settings,
+  Zap,
+  Bot,
+  TrendingUp,
 } from "lucide-react";
 
 const workflowBoards = [
@@ -153,11 +156,11 @@ export default function Workflow() {
         <div className="flex items-center justify-between">
           <div>
             <h1 className="text-3xl font-bold text-foreground">
-              Workflow Management
+              Intelligent Workflow Management
             </h1>
             <p className="text-muted-foreground mb-2">
-              Monday.com-style project and process management for construction
-              teams
+              AI-powered workflow optimization with Motion.com-style intelligent
+              scheduling for construction teams
             </p>
             <div className="flex flex-wrap gap-1 text-xs">
               <span className="bg-accent/10 text-accent px-2 py-1 rounded">
@@ -191,6 +194,82 @@ export default function Workflow() {
             </Button>
           </div>
         </div>
+
+        {/* Motion-style AI Scheduling */}
+        <Card className="bg-gradient-to-br from-purple-50 to-blue-50 border-purple-200 shadow-lg">
+          <CardContent className="p-6">
+            <div className="flex items-center justify-between mb-4">
+              <div className="flex items-center space-x-3">
+                <div className="w-12 h-12 bg-purple-600 rounded-xl flex items-center justify-center">
+                  <Zap className="h-6 w-6 text-white" />
+                </div>
+                <div>
+                  <h2 className="text-xl font-bold text-foreground">
+                    AI-Powered Scheduling
+                  </h2>
+                  <p className="text-sm text-muted-foreground">
+                    Motion.com-style intelligent task optimization
+                  </p>
+                </div>
+              </div>
+              <Badge className="bg-purple-100 text-purple-700 border-purple-200">
+                AI OPTIMIZED
+              </Badge>
+            </div>
+
+            <div className="grid grid-cols-1 md:grid-cols-4 gap-4 mb-4">
+              <div className="text-center p-3 bg-white/60 rounded-lg">
+                <Clock className="h-6 w-6 text-purple-600 mx-auto mb-2" />
+                <p className="text-lg font-bold text-foreground">32hrs</p>
+                <p className="text-xs text-muted-foreground">
+                  Time Saved This Week
+                </p>
+              </div>
+              <div className="text-center p-3 bg-white/60 rounded-lg">
+                <TrendingUp className="h-6 w-6 text-green-600 mx-auto mb-2" />
+                <p className="text-lg font-bold text-foreground">94%</p>
+                <p className="text-xs text-muted-foreground">
+                  Schedule Efficiency
+                </p>
+              </div>
+              <div className="text-center p-3 bg-white/60 rounded-lg">
+                <Bot className="h-6 w-6 text-blue-600 mx-auto mb-2" />
+                <p className="text-lg font-bold text-foreground">247</p>
+                <p className="text-xs text-muted-foreground">
+                  Tasks Auto-Scheduled
+                </p>
+              </div>
+              <div className="text-center p-3 bg-white/60 rounded-lg">
+                <CheckCircle className="h-6 w-6 text-purple-600 mx-auto mb-2" />
+                <p className="text-lg font-bold text-foreground">18</p>
+                <p className="text-xs text-muted-foreground">
+                  Conflicts Resolved
+                </p>
+              </div>
+            </div>
+
+            <div className="space-y-2">
+              <p className="text-sm font-medium text-foreground">
+                🤖 AI Recommendations for Today:
+              </p>
+              <div className="space-y-1 text-sm text-muted-foreground">
+                <p>
+                  • Move "Foundation inspection" to 9 AM for optimal weather
+                  conditions
+                </p>
+                <p>
+                  • Reschedule "Material delivery" to avoid traffic peak hours
+                </p>
+                <p>
+                  • Combine "Site meetings" to save 2.5 hours of travel time
+                </p>
+                <p>
+                  • Auto-assign "Safety training" based on team availability
+                </p>
+              </div>
+            </div>
+          </CardContent>
+        </Card>
 
         {/* Workflow Stats */}
         <div className="grid grid-cols-1 md:grid-cols-5 gap-4">
