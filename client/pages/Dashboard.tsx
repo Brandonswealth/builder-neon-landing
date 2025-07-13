@@ -592,6 +592,147 @@ export default function Dashboard() {
           </CardContent>
         </Card>
 
+        {/* Complete Construction Management Features */}
+        <Card className="bg-gradient-to-br from-slate-50 to-blue-50 border shadow-xl">
+          <CardContent className="p-8">
+            <div className="text-center mb-6">
+              <h2 className="text-2xl font-bold text-foreground mb-2">
+                🏗️ Complete Construction Management Solution
+              </h2>
+              <p className="text-muted-foreground mb-4">
+                Every construction need covered in one powerful platform
+              </p>
+              <Badge className="bg-primary text-primary-foreground">
+                ALL-IN-ONE CONSTRUCTION PLATFORM
+              </Badge>
+            </div>
+
+            <div className="grid grid-cols-1 md:grid-cols-4 gap-4 mb-6">
+              {/* Project Management & Scheduling */}
+              <div className="text-center p-4 bg-white/60 rounded-lg border border-white/20">
+                <div className="text-primary text-2xl mb-2">📊</div>
+                <h3 className="font-semibold text-foreground text-sm mb-2">
+                  Project Management
+                </h3>
+                <div className="text-xs text-muted-foreground space-y-1">
+                  <p>• Task Management & Resource Allocation</p>
+                  <p>• Gantt Charts & Progress Tracking</p>
+                  <p>• Real-time Monitoring & Reporting</p>
+                </div>
+              </div>
+
+              {/* Financial Management */}
+              <div className="text-center p-4 bg-white/60 rounded-lg border border-white/20">
+                <div className="text-primary text-2xl mb-2">💰</div>
+                <h3 className="font-semibold text-foreground text-sm mb-2">
+                  Financial Management
+                </h3>
+                <div className="text-xs text-muted-foreground space-y-1">
+                  <p>• Job Costing & Budget Tracking</p>
+                  <p>• Estimating & Invoicing</p>
+                  <p>• Payment Processing & Reports</p>
+                </div>
+              </div>
+
+              {/* Communication & Collaboration */}
+              <div className="text-center p-4 bg-white/60 rounded-lg border border-white/20">
+                <div className="text-primary text-2xl mb-2">🤝</div>
+                <h3 className="font-semibold text-foreground text-sm mb-2">
+                  Communication
+                </h3>
+                <div className="text-xs text-muted-foreground space-y-1">
+                  <p>• Real-time Collaboration</p>
+                  <p>• Client Communication Portals</p>
+                  <p>• Document Management & Sharing</p>
+                </div>
+              </div>
+
+              {/* Field Management */}
+              <div className="text-center p-4 bg-white/60 rounded-lg border border-white/20">
+                <div className="text-primary text-2xl mb-2">📱</div>
+                <h3 className="font-semibold text-foreground text-sm mb-2">
+                  Field Management
+                </h3>
+                <div className="text-xs text-muted-foreground space-y-1">
+                  <p>• Mobile Accessibility & Time Tracking</p>
+                  <p>• Daily Logs & Punch Lists</p>
+                  <p>• On-site Operations Management</p>
+                </div>
+              </div>
+            </div>
+
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-6">
+              {/* BIM & Advanced Features */}
+              <div className="text-center p-4 bg-white/60 rounded-lg border border-white/20">
+                <div className="text-primary text-2xl mb-2">🏗️</div>
+                <h3 className="font-semibold text-foreground text-sm mb-2">
+                  BIM & Advanced Tools
+                </h3>
+                <div className="text-xs text-muted-foreground space-y-1">
+                  <p>• Building Information Modeling</p>
+                  <p>• 3D Design & Planning</p>
+                  <p>• AutoCAD Integration (Premium)</p>
+                </div>
+              </div>
+
+              {/* Integration & Security */}
+              <div className="text-center p-4 bg-white/60 rounded-lg border border-white/20">
+                <div className="text-primary text-2xl mb-2">🔗</div>
+                <h3 className="font-semibold text-foreground text-sm mb-2">
+                  Integration & Security
+                </h3>
+                <div className="text-xs text-muted-foreground space-y-1">
+                  <p>• Seamless Software Integration</p>
+                  <p>• Advanced Security Protocols</p>
+                  <p>• Data Protection & Backup</p>
+                </div>
+              </div>
+
+              {/* Customization & Scalability */}
+              <div className="text-center p-4 bg-white/60 rounded-lg border border-white/20">
+                <div className="text-primary text-2xl mb-2">⚙️</div>
+                <h3 className="font-semibold text-foreground text-sm mb-2">
+                  Customization
+                </h3>
+                <div className="text-xs text-muted-foreground space-y-1">
+                  <p>• Project-specific Adaptation</p>
+                  <p>• Scalable Business Growth</p>
+                  <p>• Custom Workflow Creation</p>
+                </div>
+              </div>
+            </div>
+
+            <div className="flex flex-wrap gap-3 justify-center">
+              <Button
+                className="bg-primary hover:bg-primary/90"
+                onClick={() => (window.location.href = "/leads")}
+              >
+                🎯 Submit Bids on Jobs →
+              </Button>
+              <Button
+                variant="outline"
+                className="border-accent text-accent hover:bg-accent hover:text-accent-foreground"
+                onClick={() => (window.location.href = "/estimating")}
+              >
+                📐 AI Estimating →
+              </Button>
+              <Button
+                variant="outline"
+                className="border-accent text-accent hover:bg-accent hover:text-accent-foreground"
+                onClick={() => (window.location.href = "/workflow")}
+              >
+                🔄 Workflow Management →
+              </Button>
+              <Button
+                variant="outline"
+                className="border-yellow-500 text-yellow-600 hover:bg-yellow-500 hover:text-white"
+              >
+                👑 Upgrade for AutoCAD & More →
+              </Button>
+            </div>
+          </CardContent>
+        </Card>
+
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
           {/* Recent Projects */}
           <Card className="lg:col-span-2 bg-card border shadow-sm">
