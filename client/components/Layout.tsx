@@ -1,6 +1,7 @@
 import { ReactNode } from "react";
 import { Sidebar } from "./Sidebar";
 import { BottomNav } from "./BottomNav";
+import { HelpWidget } from "./HelpWidget";
 import { cn } from "@/lib/utils";
 
 interface LayoutProps {
@@ -29,6 +30,9 @@ export function Layout({ children, className }: LayoutProps) {
         </main>
         <BottomNav />
       </div>
+
+      {/* Help Widget - Available on all pages */}
+      <HelpWidget />
     </div>
   );
 }
